@@ -1,0 +1,57 @@
+create database NutricionClinicaySalud
+use clinicaprueba1 
+
+
+create table Paciente1(
+idpaciente1 int primary key identity,
+NombrePa varchar (100) not null,
+apellidoP varchar (100) not null,
+apellidoM varchar (100) not null,
+correo varchar(100),
+telefono varchar (100),
+fecha varchar (100),
+horacita varchar(100)
+); 
+
+insert into Paciente1(NombrePa,apellidoP,apellidoM,direccion,telefono,fecha) values ('Hinata','merino','cortez','aksks','22222', CONVERT(DATE, GETDATE()));
+
+
+select NombrePa as Nombre,apellidoP as ApellidoPaterno, apellidoM as ApellidoPaterno,correo as Correo , telefono as Telefono ,
+fecha as FechaCita, horacita as Horadelacita from Paciente1;
+
+
+create table NuevaCita(
+idnuevacita int primary key identity,
+idpaciente1 int,
+fecha varchar (100),
+horacita varchar(15),
+foreign key (idpaciente1) references Paciente1(idpaciente1) on delete cascade
+); 
+
+
+
+Create
+Alter  procedure Confirmandohoras3(
+@nombre varchar (100),
+@apellidopate varchar(100),
+@apellidomate varchar(100),
+@correopac varchar(100),
+@telefonopac varchar (100),
+@fechapac varchar(100),
+@horasdeunacita varchar(100),
+@alerta varchar(200) output
+)
+as
+if exists(select*from Paciente1 where horacita =@horasdeunacita and fecha=@fechapac)
+begin
+select @alerta= ('ya existe la hora')
+return
+end
+begin
+insert into Paciente1(NombrePa,apellidoP,apellidoM,correo,telefono,fecha,horacita )  values (@nombre,@apellidopate,@apellidomate,@correopac,@telefonopac,@fechapac,@horasdeunacita)
+end
+
+begin
+select*from Paciente1 where horacita =@horasdeunacita
+end
+
