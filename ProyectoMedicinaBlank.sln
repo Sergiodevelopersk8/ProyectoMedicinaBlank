@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModeloSQL", "ManejaSQL\ModeloSQL.csproj", "{BBAD34B7-1859-4DE1-A8F7-C5CE3C376476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassVistaSQL", "ClassVistaSQL\ClassVistaSQL.csproj", "{DFED5E5B-5292-4FEE-815C-4333E58C3408}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ventana", "Ventana\Ventana.csproj", "{36B7607C-0DD2-460B-893A-0A84611EFF95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBAD34B7-1859-4DE1-A8F7-C5CE3C376476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBAD34B7-1859-4DE1-A8F7-C5CE3C376476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBAD34B7-1859-4DE1-A8F7-C5CE3C376476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBAD34B7-1859-4DE1-A8F7-C5CE3C376476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFED5E5B-5292-4FEE-815C-4333E58C3408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFED5E5B-5292-4FEE-815C-4333E58C3408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFED5E5B-5292-4FEE-815C-4333E58C3408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFED5E5B-5292-4FEE-815C-4333E58C3408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36B7607C-0DD2-460B-893A-0A84611EFF95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B7607C-0DD2-460B-893A-0A84611EFF95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B7607C-0DD2-460B-893A-0A84611EFF95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36B7607C-0DD2-460B-893A-0A84611EFF95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94B19A1F-027F-4181-8152-EDA7CADBD7DA}
+	EndGlobalSection
+EndGlobal
